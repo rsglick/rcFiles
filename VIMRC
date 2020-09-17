@@ -1,0 +1,50 @@
+syntax enable           " enable syntax processing
+set guifont=Monospace\ 16
+set mouse=a
+set mousemodel=popup
+set nowrap
+set ttyfast                     " faster redraw
+set backspace=indent,eol,start
+
+set tabstop=4           " 4 space tab
+set expandtab           " use spaces for tabs
+set softtabstop=4       " 4 space tab
+set shiftwidth=4
+set modelines=1
+filetype indent on
+filetype plugin on
+set autoindent
+
+set number              " show line numbers
+set showcmd             " show command in bottom bar
+set nocursorline          " highlight current line
+set wildmenu
+set showmatch           " higlight matching parenthesis
+
+set ignorecase smartcase " ignore case when searching
+set incsearch            " search as characters are entered
+set hlsearch             " highlight all matches
+
+set nocompatible
+set laststatus=2  " always display the status line
+set completeopt-=menu
+set completeopt+=menuone   " show the popup menu even when there is only 1 match
+set completeopt+=noinsert  " don't insert any text until user chooses a match
+set completeopt+=preview
+set completeopt-=longest   " don't insert the longest common text
+set completeopt-=noselect  " Highlight the first completion automatically
+
+
+let g:powerline_pycmd="py3"
+
+"execute pathogen#infect()
+"
+"
+"" vim colors solarized
+"set background=dark
+"colorscheme solarized
+colorscheme desert
+
+" vim-latexsuite
+set grepprg=grep\ -nH\ $*
+let g:tex_flavor = "latex"
